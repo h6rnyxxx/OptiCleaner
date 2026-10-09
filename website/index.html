@@ -25,7 +25,7 @@
                 <a href="https://github.com/h6rnyxxx/OptiCleaner" target="_blank" class="nav-github">GitHub</a>
             </nav>
             <div class="nav-actions">
-                <a href="#download" class="btn btn-secondary">Download</a>
+                <a href="https://github.com/h6rnyxxx/OptiCleaner/releases/download/v4.0.0/OptiCleaner-v4.0.0-Windows.exe" download="OptiCleaner-v4.0.0-Windows.exe" class="btn btn-secondary" onclick="downloadFile('windows', event)">Скачать .EXE</a>
                 <a href="#pricing" class="btn btn-primary">Get Pro</a>
             </div>
         </div>
@@ -47,9 +47,9 @@
                 Engineered from the ground up for esports gamers and power users. Featuring transactional registry snapshots, 0.5ms timer resolution, native QPainter telemetry, and asymmetric Ed25519 licensing.
             </p>
             <div class="hero-cta-group">
-                <a href="https://github.com/h6rnyxxx/OptiCleaner/releases/latest" class="btn btn-primary btn-lg">
+                <a href="https://github.com/h6rnyxxx/OptiCleaner/releases/download/v4.0.0/OptiCleaner-v4.0.0-Windows.exe" download="OptiCleaner-v4.0.0-Windows.exe" class="btn btn-primary btn-lg" onclick="downloadFile('windows', event)">
                     <span>Download Standalone .EXE</span>
-                    <small>Windows 10 / 11 • 64-bit • v4.0.0</small>
+                    <small>Direct Download • Windows 10 / 11 • 64-bit • v4.0.0 (~115.7 MB)</small>
                 </a>
                 <a href="#dashboard" class="btn btn-glass btn-lg">
                     <span>Live Web Dashboard Demo</span>
@@ -201,7 +201,7 @@
                         <li>✓ Hardware Specs Inspector</li>
                         <li>✓ 100% Open Source (MIT)</li>
                     </ul>
-                    <a href="#download" class="btn btn-glass btn-block">Download Free</a>
+                    <a href="https://github.com/h6rnyxxx/OptiCleaner/releases/download/v4.0.0/OptiCleaner-v4.0.0-Windows.exe" download="OptiCleaner-v4.0.0-Windows.exe" class="btn btn-glass btn-block" onclick="downloadFile('windows', event)">Download Free .EXE</a>
                 </div>
 
                 <!-- Pro Tier -->
@@ -216,7 +216,7 @@
                         <li>✓ Ultimate Performance ACPI Scheme</li>
                         <li>✓ Background Game Booster Daemon</li>
                         <li>✓ Transactional Registry Snapshots</li>
-                        <li>✓ Priority Cloud Updates</li>
+                        <li>✓ Instant Key Delivery + Email Dispatch</li>
                     </ul>
                     <button class="btn btn-primary btn-block" onclick="openCheckout('Pro Gamer', '$14.99')">Get Pro Lifetime</button>
                 </div>
@@ -232,7 +232,7 @@
                         <li>✓ Valid on up to 5 PCs simultaneously</li>
                         <li>✓ Driver Exporter & OEM Backup Tool</li>
                         <li>✓ Remnant Hunter Deep Eraser</li>
-                        <li>✓ Direct Developer Telegram Support</li>
+                        <li>✓ Instant Key Delivery + Email Dispatch</li>
                     </ul>
                     <button class="btn btn-glass btn-block" onclick="openCheckout('Ultimate Suite', '$29.99')">Get Ultimate</button>
                 </div>
@@ -244,29 +244,29 @@
     <section id="download" class="section section-dark">
         <div class="container text-center">
             <h2 class="section-title">Download OptiCleaner v4.0</h2>
-            <p class="section-desc">Standalone executables. No installers, no adware, no telemetry.</p>
+            <p class="section-desc">Standalone executables. Direct high-speed download. No installers, no telemetry.</p>
             <div class="download-cards">
-                <a href="https://github.com/h6rnyxxx/OptiCleaner/releases/latest" class="dl-card">
+                <a href="https://github.com/h6rnyxxx/OptiCleaner/releases/download/v4.0.0/OptiCleaner-v4.0.0-Windows.exe" download="OptiCleaner-v4.0.0-Windows.exe" class="dl-card" onclick="downloadFile('windows', event)">
                     <div class="dl-icon">🪟</div>
                     <div class="dl-info">
-                        <h4>Windows Standalone</h4>
-                        <p>Windows 10 / 11 (x64) • Portable .EXE</p>
+                        <h4>Windows Standalone (.EXE)</h4>
+                        <p>Прямая загрузка • Windows 10 / 11 (x64) • v4.0.0 (~115.7 MB)</p>
                     </div>
-                    <span class="btn btn-primary">Download</span>
+                    <span class="btn btn-primary">Скачать .EXE</span>
                 </a>
-                <a href="https://github.com/h6rnyxxx/OptiCleaner/releases/latest" class="dl-card">
+                <a href="https://github.com/h6rnyxxx/OptiCleaner/releases/download/v4.0.0/OptiCleaner-v4.0.0-Linux.AppImage" download="OptiCleaner-v4.0.0-Linux.AppImage" class="dl-card" onclick="downloadFile('linux', event)">
                     <div class="dl-icon">🐧</div>
                     <div class="dl-info">
-                        <h4>Linux AppImage</h4>
-                        <p>Ubuntu, Fedora, Arch, Debian • Portable</p>
+                        <h4>Linux AppImage (.AppImage)</h4>
+                        <p>Прямая загрузка • Ubuntu, Fedora, Arch, Debian • v4.0.0 (~738 KB)</p>
                     </div>
-                    <span class="btn btn-secondary">Download</span>
+                    <span class="btn btn-secondary">Скачать AppImage</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Payment Gateway Modal -->
+    <!-- Payment & License Modal -->
     <div class="modal-backdrop" id="checkoutModal">
         <div class="modal-card">
             <button class="modal-close" onclick="closeCheckout()">&times;</button>
@@ -275,27 +275,38 @@
                 <div class="modal-price" id="modalPlanPrice">$14.99</div>
             </div>
             <div class="payment-tabs">
-                <button class="pay-tab active" onclick="switchPayMethod('card')">💳 Credit Card (Stripe)</button>
-                <button class="pay-tab" onclick="switchPayMethod('crypto')">🪙 Crypto (USDT / TON)</button>
+                <button class="pay-tab active" onclick="switchPayMethod('card')">💳 Банковская карта (Stripe)</button>
+                <button class="pay-tab" onclick="switchPayMethod('crypto')">🪙 Криптовалюта (USDT / TON)</button>
             </div>
             <div class="payment-body" id="payForm">
                 <div class="form-group">
-                    <label>Your Hardware HWID (from OptiCleaner App)</label>
+                    <label>Ваш аппаратный HWID (скопируйте из приложения OptiCleaner)</label>
                     <input type="text" id="payHwid" placeholder="OC-XXXX-XXXX-XXXX-XXXX" value="OC-8B42-19FA-E821">
                 </div>
                 <div class="form-group">
-                    <label>Email Address</label>
-                    <input type="email" id="payEmail" placeholder="your.email@domain.com">
+                    <label>Ваш Email для получения лицензии</label>
+                    <input type="email" id="payEmail" placeholder="user@gmail.com" value="user@gmail.com">
                 </div>
-                <button class="btn btn-primary btn-block" onclick="processMockPayment()">Complete Secure Checkout</button>
-                <div class="payment-security-note">🔒 256-bit SSL encrypted • Instant key delivery via Ed25519 token</div>
+                <button class="btn btn-primary btn-block" id="btnCheckoutSubmit" onclick="processPaymentAndSendEmail()">Оформить лицензию и отправить на почту</button>
+                <div class="payment-security-note">🔒 Мгновенная генерация Ed25519 ключа • Отправка на Email • Авто-скачивание .lic</div>
             </div>
             <div class="payment-success" id="paySuccess" style="display:none;">
                 <div class="success-icon">✓</div>
-                <h4>Payment Successful!</h4>
-                <p>Your cryptographically signed license token has been generated:</p>
+                <h4>Лицензия успешно оформлена!</h4>
+                
+                <div class="email-status-box" id="emailStatusBox">
+                    <span id="emailStatusText">📨 Лицензионный ключ отправлен на почту и готов к использованию!</span>
+                </div>
+
+                <p style="font-size:0.85rem; color:#94A3B8; margin-top:12px;">Ваш цифровой токен активации (привязан к вашему HWID):</p>
                 <textarea class="token-box" id="tokenResult" readonly></textarea>
-                <button class="btn btn-secondary btn-block" onclick="copyToken()">Copy Token to Clipboard</button>
+                
+                <div class="modal-btn-stack">
+                    <button class="btn btn-primary btn-block" onclick="downloadLicenseFile()">📥 Скачать файл лицензии (.lic)</button>
+                    <button class="btn btn-secondary btn-block" onclick="copyToken()">📋 Скопировать ключ в буфер</button>
+                    <a href="https://github.com/h6rnyxxx/OptiCleaner/releases/download/v4.0.0/OptiCleaner-v4.0.0-Windows.exe" download="OptiCleaner-v4.0.0-Windows.exe" class="btn btn-glass btn-block" onclick="downloadFile('windows', event)">💾 Скачать OptiCleaner-v4.0.0-Windows.exe</a>
+                    <button class="btn btn-glass btn-block" onclick="openMailClientFallback()">✉️ Открыть письмо в почтовой программе</button>
+                </div>
             </div>
         </div>
     </div>

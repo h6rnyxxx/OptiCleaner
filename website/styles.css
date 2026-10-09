@@ -781,3 +781,23 @@ body {
 .footer-links a:hover {
     color: var(--cyan);
 }
+
+/* Email status box & modal button stack */
+.email-status-box {
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid #10B981;
+    color: #10B981;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.modal-btn-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+}
