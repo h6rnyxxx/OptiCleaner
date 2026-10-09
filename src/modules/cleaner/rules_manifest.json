@@ -1,0 +1,37 @@
+{
+  "categories": [
+    {
+      "id": "system_temp",
+      "name": "System Temporary Files",
+      "description": "Windows %TEMP%, prefetch, crash dumps, and setup artifacts",
+      "paths": [
+        "%TEMP%\\*.*",
+        "%WINDIR%\\Temp\\*.*",
+        "%WINDIR%\\Prefetch\\*.pf",
+        "%WINDIR%\\Minidump\\*.*",
+        "%LOCALAPPDATA%\\CrashDumps\\*.*"
+      ]
+    },
+    {
+      "id": "windows_cache",
+      "name": "Windows Cache & Logs",
+      "description": "Thumbnail cache, error logs, and delivery optimization files",
+      "paths": [
+        "%LOCALAPPDATA%\\Microsoft\\Windows\\Explorer\\thumbcache_*.db",
+        "%WINDIR%\\Logs\\*.*",
+        "%WINDIR%\\SoftwareDistribution\\Download\\*.*"
+      ]
+    },
+    {
+      "id": "browser_cache",
+      "name": "Web Browsers Cache",
+      "description": "Google Chrome, Edge, Firefox, and Yandex cached web assets",
+      "paths": [
+        "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\Default\\Cache\\*.*",
+        "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\Default\\Cache\\*.*",
+        "%LOCALAPPDATA%\\Yandex\\YandexBrowser\\User Data\\Default\\Cache\\*.*",
+        "%LOCALAPPDATA%\\Mozilla\\Firefox\\Profiles\\*\\cache2\\*.*"
+      ]
+    }
+  ]
+}

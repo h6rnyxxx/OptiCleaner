@@ -1,0 +1,10 @@
+{
+  "autostart": false,
+  "minimize_to_tray": false,
+  "show_notifications": false,
+  "auto_update": true,
+  "theme": "frost_glass",
+  "language": "简体中文",
+  "file_protection": true,
+  "deep_clean": false
+}

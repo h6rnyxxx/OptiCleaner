@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiCleaner v4.0 — High-Performance System Suite & Tweaker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">OptiCleaner <span class="badge-v">v4.0</span></span>
+            </a>
+            <nav class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#dashboard">Web Dashboard</a>
+                <a href="#architecture">Architecture</a>
+                <a href="#pricing">Pricing</a>
+                <a href="https://github.com/h6rnyxxx/OptiCleaner" target="_blank" class="nav-github">GitHub</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#download" class="btn btn-secondary">Download</a>
+                <a href="#pricing" class="btn btn-primary">Get Pro</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-content">
+            <div class="hero-tag">
+                <span class="tag-dot"></span>
+                MODULAR ARCHITECTURE • KERNEL-LEVEL TWEAKS • ZERO BLOAT
+            </div>
+            <h1 class="hero-title">
+                The Next-Generation <br>
+                <span class="gradient-text">System Optimization</span> Engine
+            </h1>
+            <p class="hero-subtitle">
+                Engineered from the ground up for esports gamers and power users. Featuring transactional registry snapshots, 0.5ms timer resolution, native QPainter telemetry, and asymmetric Ed25519 licensing.
+            </p>
+            <div class="hero-cta-group">
+                <a href="https://github.com/h6rnyxxx/OptiCleaner/releases/latest" class="btn btn-primary btn-lg">
+                    <span>Download Standalone .EXE</span>
+                    <small>Windows 10 / 11 • 64-bit • v4.0.0</small>
+                </a>
+                <a href="#dashboard" class="btn btn-glass btn-lg">
+                    <span>Live Web Dashboard Demo</span>
+                    <small>Interactive Telemetry Preview</small>
+                </a>
+            </div>
+
+            <!-- Hero Mockup Display -->
+            <div class="hero-preview-card">
+                <div class="preview-header">
+                    <div class="preview-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="preview-title">OptiCleaner v4.0 — Unified Control Center</div>
+                    <div class="preview-status">● SYSTEM OPTIMIZED</div>
+                </div>
+                <div class="preview-grid">
+                    <div class="metric-card">
+                        <div class="metric-num text-cyan" id="hero-cleaned">14.8 GB</div>
+                        <div class="metric-label">Junk Cleaned</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-num text-purple" id="hero-latency">0.50 ms</div>
+                        <div class="metric-label">Kernel Timer</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-num text-blue" id="hero-ram">4.2 GB</div>
+                        <div class="metric-label">RAM Reclaimed</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-num text-green" id="hero-fps">+32%</div>
+                        <div class="metric-label">1% Low FPS Boost</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Built Like A Fighter Jet</h2>
+                <p class="section-desc">Every subsystem is built as an independent, testable module with automatic safety rollback.</p>
+            </div>
+            <div class="bento-grid">
+                <div class="bento-card bento-wide">
+                    <div class="bento-icon">🛡️</div>
+                    <h3>Transactional Registry & Safety Snapshots</h3>
+                    <p>Every registry tweak, service state change, and system preset creates a JSON snapshot and Windows System Restore Point prior to execution. One-click rollback guarantees disaster recovery.</p>
+                </div>
+                <div class="bento-card">
+                    <div class="bento-icon">⏱️</div>
+                    <h3>0.5ms Timer Resolution</h3>
+                    <p>Direct WinAPI <code>NtSetTimerResolution</code> calls ensure microsecond-level scheduling precision, slashing input latency in competitive games.</p>
+                </div>
+                <div class="bento-card">
+                    <div class="bento-icon">🚀</div>
+                    <h3>Game Booster Daemon</h3>
+                    <p>Background process observer dynamically detects active 3D titles and assigns <code>HIGH_PRIORITY_CLASS</code> and core affinity.</p>
+                </div>
+                <div class="bento-card">
+                    <div class="bento-icon">🧹</div>
+                    <h3>Remnant Hunter & Uninstaller</h3>
+                    <p>Deep-cleans stubborn directories in <code>ProgramData</code>, <code>AppData</code>, and residual registry keys left behind by uninstallers.</p>
+                </div>
+                <div class="bento-card bento-wide">
+                    <div class="bento-icon">🔐</div>
+                    <h3>Asymmetric Ed25519 Cryptography</h3>
+                    <p>Zero symmetric secrets in client binaries. All digital license verification relies on public-key cryptography with hardware-bound CPU, Motherboard, and Disk UUIDs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Live Web Dashboard -->
+    <section id="dashboard" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Interactive Web Dashboard</h2>
+                <p class="section-desc">Experience the native telemetry gauges and process monitor right inside your browser.</p>
+            </div>
+            <div class="dashboard-window">
+                <div class="dash-sidebar">
+                    <div class="dash-brand">⚡ OptiCleaner</div>
+                    <button class="dash-nav-item active" onclick="switchDashTab(0)">🧹 System Cleaner</button>
+                    <button class="dash-nav-item" onclick="switchDashTab(1)">⚡ Optimization</button>
+                    <button class="dash-nav-item" onclick="switchDashTab(2)">📊 Hardware Telemetry</button>
+                    <div class="dash-hwid-box">
+                        <small>MACHINE HWID</small>
+                        <code>OC-8B42-19FA-E821</code>
+                    </div>
+                </div>
+                <div class="dash-content">
+                    <div class="dash-header">
+                        <div>
+                            <h3>Active System Telemetry</h3>
+                            <p class="text-muted">Real-time kernel monitoring</p>
+                        </div>
+                        <button class="btn btn-primary" onclick="simulateOptimize()">⚡ Quick Boost</button>
+                    </div>
+                    <div class="dash-gauges">
+                        <div class="gauge-box">
+                            <div class="gauge-circle" id="gauge-cpu" style="--val: 24">
+                                <span id="gauge-cpu-val">24%</span>
+                            </div>
+                            <h4>CPU LOAD</h4>
+                        </div>
+                        <div class="gauge-box">
+                            <div class="gauge-circle gauge-purple" id="gauge-ram" style="--val: 58">
+                                <span id="gauge-ram-val">58%</span>
+                            </div>
+                            <h4>RAM USAGE</h4>
+                        </div>
+                        <div class="gauge-box">
+                            <div class="gauge-circle gauge-blue" id="gauge-disk" style="--val: 42">
+                                <span id="gauge-disk-val">42%</span>
+                            </div>
+                            <h4>DISK C:</h4>
+                        </div>
+                    </div>
+                    <div class="dash-terminal" id="dash-log">
+                        <div class="log-line">[SYSTEM] OptiCleaner v4.0 Core Engine initialized.</div>
+                        <div class="log-line text-cyan">[KERNEL] Timer resolution set to 0.5ms.</div>
+                        <div class="log-line text-green">[MEMORY] Working sets trimmed. Standby list ready.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Transparent, Fair Pricing</h2>
+                <p class="section-desc">Open-source core. Upgrade to Pro for lifetime gaming and enterprise modules.</p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Free Tier -->
+                <div class="pricing-card">
+                    <div class="pricing-badge">OPEN SOURCE</div>
+                    <h3>Community</h3>
+                    <div class="pricing-price">$0 <span>/ forever</span></div>
+                    <p class="pricing-desc">Full access to core system cleaning and open-source source code.</p>
+                    <ul class="pricing-features">
+                        <li>✓ Complete Disk & Browser Cleaner</li>
+                        <li>✓ Basic Memory Trimming</li>
+                        <li>✓ Hardware Specs Inspector</li>
+                        <li>✓ 100% Open Source (MIT)</li>
+                    </ul>
+                    <a href="#download" class="btn btn-glass btn-block">Download Free</a>
+                </div>
+
+                <!-- Pro Tier -->
+                <div class="pricing-card pricing-featured">
+                    <div class="pricing-badge">MOST POPULAR</div>
+                    <h3>Pro Gamer</h3>
+                    <div class="pricing-price">$14.99 <span>/ lifetime</span></div>
+                    <p class="pricing-desc">For competitive gamers demanding ultra-low input lag and maximum FPS.</p>
+                    <ul class="pricing-features">
+                        <li>✓ All Community Features</li>
+                        <li>✓ 0.5ms Timer Resolution Engine</li>
+                        <li>✓ Ultimate Performance ACPI Scheme</li>
+                        <li>✓ Background Game Booster Daemon</li>
+                        <li>✓ Transactional Registry Snapshots</li>
+                        <li>✓ Priority Cloud Updates</li>
+                    </ul>
+                    <button class="btn btn-primary btn-block" onclick="openCheckout('Pro Gamer', '$14.99')">Get Pro Lifetime</button>
+                </div>
+
+                <!-- Ultimate Tier -->
+                <div class="pricing-card">
+                    <div class="pricing-badge">POWER USER</div>
+                    <h3>Ultimate Suite</h3>
+                    <div class="pricing-price">$29.99 <span>/ lifetime</span></div>
+                    <p class="pricing-desc">For workstations, bench-markers, and multi-PC enthusiasts.</p>
+                    <ul class="pricing-features">
+                        <li>✓ All Pro Features</li>
+                        <li>✓ Valid on up to 5 PCs simultaneously</li>
+                        <li>✓ Driver Exporter & OEM Backup Tool</li>
+                        <li>✓ Remnant Hunter Deep Eraser</li>
+                        <li>✓ Direct Developer Telegram Support</li>
+                    </ul>
+                    <button class="btn btn-glass btn-block" onclick="openCheckout('Ultimate Suite', '$29.99')">Get Ultimate</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="section section-dark">
+        <div class="container text-center">
+            <h2 class="section-title">Download OptiCleaner v4.0</h2>
+            <p class="section-desc">Standalone executables. No installers, no adware, no telemetry.</p>
+            <div class="download-cards">
+                <a href="https://github.com/h6rnyxxx/OptiCleaner/releases/latest" class="dl-card">
+                    <div class="dl-icon">🪟</div>
+                    <div class="dl-info">
+                        <h4>Windows Standalone</h4>
+                        <p>Windows 10 / 11 (x64) • Portable .EXE</p>
+                    </div>
+                    <span class="btn btn-primary">Download</span>
+                </a>
+                <a href="https://github.com/h6rnyxxx/OptiCleaner/releases/latest" class="dl-card">
+                    <div class="dl-icon">🐧</div>
+                    <div class="dl-info">
+                        <h4>Linux AppImage</h4>
+                        <p>Ubuntu, Fedora, Arch, Debian • Portable</p>
+                    </div>
+                    <span class="btn btn-secondary">Download</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Gateway Modal -->
+    <div class="modal-backdrop" id="checkoutModal">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeCheckout()">&times;</button>
+            <div class="modal-header">
+                <h3 id="modalPlanTitle">Pro Gamer License</h3>
+                <div class="modal-price" id="modalPlanPrice">$14.99</div>
+            </div>
+            <div class="payment-tabs">
+                <button class="pay-tab active" onclick="switchPayMethod('card')">💳 Credit Card (Stripe)</button>
+                <button class="pay-tab" onclick="switchPayMethod('crypto')">🪙 Crypto (USDT / TON)</button>
+            </div>
+            <div class="payment-body" id="payForm">
+                <div class="form-group">
+                    <label>Your Hardware HWID (from OptiCleaner App)</label>
+                    <input type="text" id="payHwid" placeholder="OC-XXXX-XXXX-XXXX-XXXX" value="OC-8B42-19FA-E821">
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" id="payEmail" placeholder="your.email@domain.com">
+                </div>
+                <button class="btn btn-primary btn-block" onclick="processMockPayment()">Complete Secure Checkout</button>
+                <div class="payment-security-note">🔒 256-bit SSL encrypted • Instant key delivery via Ed25519 token</div>
+            </div>
+            <div class="payment-success" id="paySuccess" style="display:none;">
+                <div class="success-icon">✓</div>
+                <h4>Payment Successful!</h4>
+                <p>Your cryptographically signed license token has been generated:</p>
+                <textarea class="token-box" id="tokenResult" readonly></textarea>
+                <button class="btn btn-secondary btn-block" onclick="copyToken()">Copy Token to Clipboard</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">⚡ OptiCleaner</div>
+                <p>High-performance system tuning and cleaner ecosystem.</p>
+                <small>© 2026 h6rnyx. Licensed under MIT.</small>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/h6rnyxxx/OptiCleaner" target="_blank">GitHub Repository</a>
+                <a href="https://github.com/h6rnyxxx/OptiCleaner/releases" target="_blank">Releases</a>
+                <a href="https://github.com/h6rnyxxx/OptiCleaner/blob/main/LICENSE" target="_blank">MIT License</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

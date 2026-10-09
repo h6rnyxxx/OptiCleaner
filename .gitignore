@@ -1,0 +1,70 @@
+# ==============================================================================
+# OptiCleaner Git Ignore (Strict Security & Production Build)
+# ==============================================================================
+
+# Security, Credentials & Private Keys (CRITICAL)
+*.env
+*.env.*
+*.key
+*.pem
+*.pfx
+*.cert
+*.db
+*.sqlite
+*.sqlite3
+admin_log.txt
+bot_tray.log
+error_tray.log
+telegram_bot/
+backups/
+licenses*/
+private/
+
+# Executables & Large Binaries (Distributed via GitHub Releases)
+*.exe
+*.AppImage
+*.dll
+*.so
+*.dylib
+releases/*.exe
+releases/*.AppImage
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# PyInstaller & Build artifacts
+build/
+dist/
+src/build/
+src/dist/
+*.spec.bak
+*.old
+*.manifest
+
+# Linux AppImage Build directory
+Linux/AppDir/
+Linux/payload.tar.gz
+Linux/appdir.tar.gz
+
+# Local backups and temporary files
+*.bak
+*.v*bak
+*.tmp
+*.swp
+*~
+
+# Logs and Crash dumps
+*.log
+logs/
+src/logs/
+latest_crash.log
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
