@@ -1,0 +1,2 @@
+﻿77c96842318fa17b1cb9237cf846995d814f8ab03cd8d4631f6baf5542f0acfd  OptiCleaner-v3.0.0-Windows.exe
+95a5773878f99751cc8d4fa020c1db1fe8c93c1d7ea517e543735c93266f1059  OptiCleaner-v3.0.0-Linux.AppImage

@@ -1,0 +1,66 @@
+# ==============================================================================
+# OptiCleaner Git Ignore
+# ==============================================================================
+
+# Executables & Large Binaries (Distributed via GitHub Releases)
+*.exe
+*.AppImage
+*.dll
+*.so
+*.dylib
+releases/*.exe
+releases/*.AppImage
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# PyInstaller & Build artifacts
+build/
+dist/
+src/build/
+src/dist/
+*.spec.bak
+*.old
+*.manifest
+
+# Linux AppImage Build directory
+Linux/AppDir/
+Linux/payload.tar.gz
+Linux/appdir.tar.gz
+
+# Local backups and temporary files
+*.bak
+*.v*bak
+*.tmp
+*.swp
+*~
+
+# Logs and Crash dumps
+*.log
+logs/
+src/logs/
+latest_crash.log
+
+# Telegram Bot Secrets & Databases (CRITICAL SECURITY)
+telegram_bot/.env
+.env
+*.db
+*.sqlite
+*.sqlite3
+telegram_bot/backups/
+telegram_bot/admin_log.txt
+telegram_bot/bot_tray.log
+telegram_bot/error_tray.log
+
+# Local utility scripts
+publish_github.bat
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,30 @@
+#!/bin/sh
+# OptiCleaner Linux AppImage Entrypoint (AppRun)
+HERE="$(dirname "$(readlink -f "${0}")")"
+export PATH="${HERE}/usr/bin:${PATH}"
+export LD_LIBRARY_PATH="${HERE}/usr/lib:${HERE}/usr/lib/x86_64-linux-gnu:${LD_LIBRARY_PATH}"
+export PYTHONPATH="${HERE}/usr/share/opticleaner:${HERE}/usr/lib/python3/dist-packages:${PYTHONPATH}"
+export QT_PLUGIN_PATH="${HERE}/usr/plugins:${QT_PLUGIN_PATH}"
+export QT_QPA_PLATFORM_PLUGIN_PATH="${HERE}/usr/plugins/platforms:${QT_QPA_PLATFORM_PLUGIN_PATH}"
+export XDG_DATA_DIRS="${HERE}/usr/share:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
+
+# Check for embedded binary first
+if [ -x "${HERE}/usr/bin/opticleaner_bin" ]; then
+    exec "${HERE}/usr/bin/opticleaner_bin" "$@"
+fi
+
+# Fallback to system Python3 with Qt5
+PYTHON_BIN="$(which python3 2>/dev/null || which python 2>/dev/null)"
+if [ -n "$PYTHON_BIN" ]; then
+    exec "$PYTHON_BIN" "${HERE}/usr/share/opticleaner/app.py" "$@"
+fi
+
+# Error notification if python not found
+if which zenity >/dev/null 2>&1; then
+    zenity --error --text="Python 3 is required to run OptiCleaner on Linux.\nPlease install python3 and python3-pyqt5:\nsudo apt install python3 python3-pyqt5"
+elif which kdialog >/dev/null 2>&1; then
+    kdialog --error "Python 3 is required to run OptiCleaner.\nPlease install python3 and python3-pyqt5."
+else
+    echo "Error: Python 3 and PyQt5 are required to run OptiCleaner."
+fi
+exit 1

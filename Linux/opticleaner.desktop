@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=OptiCleaner
+GenericName=System Optimizer & Cleaner
+Comment=Professional System Cleanup, Hardware Diagnostics and PC Optimization
+Exec=OptiCleaner %F
+Icon=opticleaner
+Categories=System;Utility;Settings;
+Terminal=false
+StartupNotify=true
+StartupWMClass=OptiCleaner
+Keywords=cleaner;optimizer;system;hardware;whql;tweaks;
